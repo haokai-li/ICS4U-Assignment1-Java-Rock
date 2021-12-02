@@ -69,22 +69,22 @@ final class Rock {
     */
 
     static int[] process(final String originalChoose) {
-        int[] answerArray = new int[2];
-        Random rand = new Random();
+        final int[] answerArray = new int[2];
+        final Random rand = new Random();
         final int computerChoose = rand.nextInt(3) + 1;
-        final answerArray[0] = computerChoose;
+        answerArray[0] = computerChoose;
         if ((computerChoose == TWO && SCISSOR.equals(originalChoose))
             || (computerChoose == THREE && ROCK.equals(originalChoose))
             || (computerChoose == ONE && PAPER.equals(originalChoose))) {
-            answerArray[1] = 1;
+            answerArray[1] = ONE;
         } else if ((computerChoose == THREE && SCISSOR.equals(originalChoose))
             || (computerChoose == ONE && ROCK.equals(originalChoose))
             || (computerChoose == TWO && PAPER.equals(originalChoose))) {
-            answerArray[1] = 2;
+            answerArray[1] = TWO;
         } else if ((computerChoose == ONE && SCISSOR.equals(originalChoose))
             || (computerChoose == TWO && ROCK.equals(originalChoose))
             || (computerChoose == THREE && PAPER.equals(originalChoose))) {
-            answerArray[1] = 3;
+            answerArray[1] = THREE;
         } else {
             answerArray[1] = -1;
         }
@@ -120,7 +120,7 @@ final class Rock {
                 System.out.println("It is a tie.");
             } else if (answer[1] == THREE) {
                 System.out.println("You lose");
-            } else if (answer[1] == -1){
+            } else if (answer[1] == -1) {
                 System.out.println("Your intput was error");
             }
 
