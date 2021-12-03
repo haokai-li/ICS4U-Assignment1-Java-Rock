@@ -107,11 +107,11 @@ final class Rock {
             final int[] answer = process(originalChoose);
 
             if (answer[0] == ONE) {
-                System.out.println("Chomputer choose: Rock.");
+                System.out.println("Computer choose: Rock.");
             } else if (answer[0] == TWO) {
-                System.out.println("Chomputer choose: Paper.");
+                System.out.println("Computer choose: Paper.");
             } else if (answer[0] == THREE) {
-                System.out.println("Chomputer choose: Scissor.");
+                System.out.println("Computer choose: Scissor.");
             }
 
             if (answer[1] == ONE) {
