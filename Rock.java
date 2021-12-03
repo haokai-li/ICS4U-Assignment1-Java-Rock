@@ -121,7 +121,7 @@ final class Rock {
             } else if (answer[1] == THREE) {
                 System.out.println("You lose");
             } else if (answer[1] == -1) {
-                System.out.println("Your intput was error");
+                System.out.println("Your input was error");
             }
 
         } catch (java.util.InputMismatchException errorCode) {
