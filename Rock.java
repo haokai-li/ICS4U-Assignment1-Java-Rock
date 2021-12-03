@@ -73,17 +73,17 @@ final class Rock {
         final Random rand = new Random();
         final int computerChoose = rand.nextInt(3) + 1;
         answerArray[0] = computerChoose;
-        if ((computerChoose == TWO && SCISSOR.equals(originalChoose))
-            || (computerChoose == THREE && ROCK.equals(originalChoose))
-            || (computerChoose == ONE && PAPER.equals(originalChoose))) {
+        if (computerChoose == TWO && SCISSOR.equals(originalChoose)
+            || computerChoose == THREE && ROCK.equals(originalChoose)
+            || computerChoose == ONE && PAPER.equals(originalChoose)) {
             answerArray[1] = ONE;
-        } else if ((computerChoose == THREE && SCISSOR.equals(originalChoose))
-            || (computerChoose == ONE && ROCK.equals(originalChoose))
-            || (computerChoose == TWO && PAPER.equals(originalChoose))) {
+        } else if (computerChoose == THREE && SCISSOR.equals(originalChoose)
+            || computerChoose == ONE && ROCK.equals(originalChoose)
+            || computerChoose == TWO && PAPER.equals(originalChoose)) {
             answerArray[1] = TWO;
-        } else if ((computerChoose == ONE && SCISSOR.equals(originalChoose))
-            || (computerChoose == TWO && ROCK.equals(originalChoose))
-            || (computerChoose == THREE && PAPER.equals(originalChoose))) {
+        } else if (computerChoose == ONE && SCISSOR.equals(originalChoose)
+            || computerChoose == TWO && ROCK.equals(originalChoose)
+            || computerChoose == THREE && PAPER.equals(originalChoose)) {
             answerArray[1] = THREE;
         } else {
             answerArray[1] = -1;
